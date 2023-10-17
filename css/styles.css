@@ -1,0 +1,120 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
+}
+/* nav only has one element inside of it and that is ul
+display flex puts things next to each other so if theres nothing to place next to it nothing will change */
+
+/* display flex aligns elements next to each other */
+nav {
+   text-align: center;
+   list-style: none;
+   position: sticky;
+   top: 0px;
+}
+ul {
+   text-align: center;
+   background-color: slategrey;
+   padding: 15px;
+   word-spacing: 30px;
+}
+nav ul li {
+    display: inline;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    
+}
+nav a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+/* 1FR will take one section and make it a colum */
+.container {
+    margin: 30px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "firstHead secondHeading thirdHeading"
+    "data1     data2         data3"
+    "data4     data5         data6"
+    "data7     data8         data9"
+    ;
+}
+#abstract {
+    grid-area: firstHead;
+}
+#moontain {
+    grid-area: thirdHeading;
+}
+#bootefly {
+    grid-area: data2;
+}
+#froog {
+    grid-area: data4;
+}
+#joel {
+    grid-area: data6;
+}
+#parrot {
+    grid-area: data8;
+}
+
+/* img {
+    margin:50px;
+} */
+/* #abstract {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+#moontain {
+    grid-column: 3;
+    grid-row: 3;
+}  */
+/* #abstract {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#bootefly {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#froog {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#moontain {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#parrot {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+#moonkey {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px
+} */
+/* Display Flex and Display Grid
+they must both be attached to parent element */
+
+/* display grid makes a more accessible table for bigger elements */
+
